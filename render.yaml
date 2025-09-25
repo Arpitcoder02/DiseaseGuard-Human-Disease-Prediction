@@ -1,0 +1,1 @@
+services:\n  - type: web\n    name: disease-guard\n    env: python\n    plan: free\n    buildCommand: pip install -r requirements.txt\n    startCommand: streamlit run app.py --server.port  --server.address 0.0.0.0\n    autoDeploy: true\n    envVars: []
